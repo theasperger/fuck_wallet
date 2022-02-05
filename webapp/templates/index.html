@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Strona Główna</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="static/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark">
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0" style="color: dimgray">LaptopyDoDomu</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link active" aria-current="page" href="{{ url_for('home') }}">Strona Główna</a>
+        <a class="nav-link" href="{{ url_for('kategorie') }}">Laptopy</a>
+        <a class="nav-link" href="#">O Nas</a>
+        <a class="nav-link" href="#">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="px-3">
+    <h1>Laptopy powystawowe (outlet) oraz od firm</h1>
+    <p class="lead">Prezentujemy Państwu nowe źródło laptopów powystawowych oraz od firm. Dzięki współpracy z wieloma firmami oraz doradzcami handlowymi pozyaksliśmy dostęp do sprzedawców i możliwości prezentowania ich produktów.
+    Sami oceniamy stan urządzeń, daje na to własną gwarancję oraz (w razie W) poszliśmy o krok dalej i dzięki kolejnej współpracy z firmami serwisowymi (w większych mistach: Poznań, Katowice, Warszawa, Gdańsk, Wrocław, Zakopane, Łódź) istnieje możliwość
+    osobistego dostarczenia urządzenia na naszej karcie gwarancyjnej - dzięki temu cały serwis przebiega jeszcze sprawniej (bez zbędnych wysyłek i oczekiwań na diagnozę od jednej filii)</p>
+    <p class="lead">
+      <a href="{{ url_for('kategorie') }}" class="btn btn-lg btn-secondary fw-bold border-white bg-dark">Przejrzyj naszą ofertę</a>
+    </p>
+  </main>
+
+  <footer class="mt-auto text-white-50">
+    <p>© laptopydodomu 2022</p>
+  </footer>
+</div>
+  </body>
+</html>
